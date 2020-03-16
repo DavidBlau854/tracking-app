@@ -1,0 +1,12 @@
+.sideAndPage {
+  display: flex;
+  flex-direction: row;
+}
+
+SideBar {
+  width: 10%;
+}
+
+SubjectPage {
+  width: 90%ks;
+}
