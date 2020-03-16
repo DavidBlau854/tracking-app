@@ -9,6 +9,10 @@ function SubjectsPage() {
       <Subject title="friends"></Subject>
       <Subject title="cigarettes"></Subject>
       <Subject title="books"></Subject>
+      <Subject title="sports"></Subject>
+      <Subject title="friends"></Subject>
+      <Subject title="cigarettes"></Subject>
+      <Subject title="books"></Subject>
     </div>
   );
 }
