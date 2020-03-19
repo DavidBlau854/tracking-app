@@ -16,7 +16,6 @@ class SubjectsPage extends React.Component {
     const index = clonedState.subjects.findIndex(subj => subj.id === subjectId);
     clonedState.subjects[index].eventsArray.push({ creationTime: new Date() });
     this.setState(clonedState);
-    console.log(`new state: ${JSON.stringify(this.state, null, 2)}`);
   }
 
   render() {

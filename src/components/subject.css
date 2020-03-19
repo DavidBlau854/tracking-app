@@ -5,9 +5,9 @@
   border-radius: 11px;
   text-align: center;
   margin: 10px;
-  background-color: cornflowerblue;
+  background-color: mediumpurple;
 }
 
 .subject:hover {
-  opacity: 0.85;
+  opacity: 0.95;
 }
