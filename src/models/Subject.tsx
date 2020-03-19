@@ -13,7 +13,7 @@ export interface ISubject {
   backgroundPic: null;
 }
 
-enum TrackingPeriod {
+export enum TrackingPeriod {
   days,
   weeks,
   months,
@@ -21,14 +21,14 @@ enum TrackingPeriod {
   infinity
 }
 
-enum Units {
-  numbers,
+export enum Units {
+  times,
   km,
   calories,
   time
 }
 
-enum Goal {
+export enum Goal {
   avg,
   total
 }

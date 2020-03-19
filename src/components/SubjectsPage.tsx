@@ -15,7 +15,7 @@ class SubjectsPage extends React.Component {
     return (
       <div className="subjectsPage">
         {this.state.subjects.map(subj => (
-          <Subject key={subj.id} title={subj.title}></Subject>
+          <Subject key={subj.id} subject={subj}></Subject>
         ))}
       </div>
     );

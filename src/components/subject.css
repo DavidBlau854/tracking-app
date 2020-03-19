@@ -5,4 +5,9 @@
   border-radius: 11px;
   text-align: center;
   margin: 10px;
+  background-color: cornflowerblue;
+}
+
+.subject:hover {
+  opacity: 0.85;
 }
