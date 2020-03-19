@@ -10,14 +10,14 @@ class SubjectsPage extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ subjects: exampleSubjects });
+    this.setState({ subjects: exampleSubjects }); //server here..
   }
 
   render() {
     return (
       <div className="subjectsPage">
         {this.state.subjects.map(subj => (
-          <Subject title={subj.title}></Subject>
+          <Subject key={subj.id} title={subj.title}></Subject>
         ))}
       </div>
     );
