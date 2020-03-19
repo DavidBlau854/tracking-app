@@ -7,6 +7,7 @@ type IState = {
 };
 type IProps = {
   subject: ISubject;
+  writeEvent: Function;
 };
 
 class Subject extends React.Component {
@@ -24,7 +25,8 @@ class Subject extends React.Component {
     this.setState({ isHovered: !this.state.isHovered });
   }
   render() {
-    // const subj = this.props.subject;
+    const detailsString = `Total ${this.props.subject.eventsArray.length} ${this.props.subject.unit}
+    in the last ${this.props.subject.TrackingPeriod}`;
     return (
       <div
         className="subject"
@@ -32,11 +34,17 @@ class Subject extends React.Component {
         onMouseLeave={this.onMouseCrossBoundary}
       >
         <p>{this.props.subject.title}</p>
-        <p>
-          {this.props.subject.eventsArray.length} {this.props.subject.unit}
-        </p>
-        {/* {this.state.isHovered && <p>mouse is in</p>}
-        {!this.state.isHovered && <p>mouse is out</p>} */}
+        {!this.state.isHovered && (
+          <div>
+            <p>{detailsString}</p>
+          </div>
+        )}
+        {this.state.isHovered && (
+          <div>
+            <button onClick={() => this.props.writeEvent()}>+</button>
+            <input type={this.props.subject.unitInputType} />
+          </div>
+        )}
       </div>
     );
   }

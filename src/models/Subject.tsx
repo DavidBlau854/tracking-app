@@ -5,30 +5,36 @@ export interface ISubject {
   archived: boolean;
   TrackingPeriod: TrackingPeriod;
   unit: Units;
+  unitInputType: UnitInputType;
   unitDesc: string;
   subjectDesc: string;
   goal: Goal;
-  eventsArray: [];
+  eventsArray: any[];
   endDate: Date | null;
   backgroundPic: null;
 }
 
 export enum TrackingPeriod {
-  days,
-  weeks,
-  months,
-  years,
-  infinity
+  Day = "day",
+  Week = "week",
+  Months = "months",
+  Years = "years",
+  Infinity = "not ending"
 }
 
 export enum Units {
-  times,
-  km,
-  calories,
-  time
+  Times = "times",
+  KM = "km",
+  Calories = "kal",
+  Time = "time"
 }
 
 export enum Goal {
   avg,
   total
+}
+
+export enum UnitInputType {
+  number = "number",
+  time = "time"
 }
