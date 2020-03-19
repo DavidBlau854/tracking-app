@@ -5,11 +5,7 @@ import exampleSubjects from "../ExampleSubjects";
 import { ISubject } from "../models/Subject";
 
 class SubjectsPage extends React.Component {
-  state: { subjects: ISubject[] };
-  constructor() {
-    super({});
-    this.state = { subjects: [] };
-  }
+  state: { subjects: ISubject[] } = { subjects: [] };
 
   componentDidMount() {
     this.setState({ subjects: exampleSubjects }); //server here..
