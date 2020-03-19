@@ -1,19 +1,26 @@
 import React from "react";
 import Subject from "./Subject";
 import "./subjectsPage.css";
+import * as exampleSubjects from "../ExampleSubjects";
 
-function SubjectsPage() {
-  return (
-    <div className="subjectsPage">
-      <Subject title="sports"></Subject>
-      <Subject title="friends"></Subject>
-      <Subject title="cigarettes"></Subject>
-      <Subject title="books"></Subject>
-      <Subject title="sports"></Subject>
-      <Subject title="friends"></Subject>
-      <Subject title="cigarettes"></Subject>
-      <Subject title="books"></Subject>
-    </div>
-  );
+class SubjectsPage extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    this.setState({ exampleSubjects });
+  }
+
+  render() {
+    return (
+      <div className="subjectsPage">
+        {this.state.exampleSubjects.map(subj => (
+          <Subject title="subj.title"></Subject>
+        ))}
+      </div>
+    );
+  }
 }
+
 export default SubjectsPage;

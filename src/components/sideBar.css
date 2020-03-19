@@ -1,3 +1,6 @@
-.sideBar {
-  position: fixed;
+.side-bar {
+  /* position: fixed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
