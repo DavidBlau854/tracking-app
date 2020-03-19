@@ -1,13 +1,16 @@
 import React from "react";
-import "./styles/sideBar.css";
+import "./sideBar.css";
 
 function SideBar() {
   return (
-    <div className="sideBar">
-      <p>Profile</p>
-      <p>Subjects</p>
-      <p>View</p>
-      <p>Archive</p>
+    <div>
+      <div className="nav-bar">
+        <p>Profile</p>
+        <p>Subjects</p>
+        <p>View</p>
+        <p>Archive</p>
+      </div>
+      <div className="add-subject">Add Tracking Subject</div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/subject.css";
+import "./subject.css";
 
 function Subject(props) {
   return (

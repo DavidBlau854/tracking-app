@@ -1,6 +1,6 @@
 import React from "react";
 import Subject from "./Subject";
-import "./styles/subjectsPage.css";
+import "./subjectsPage.css";
 
 function SubjectsPage() {
   return (

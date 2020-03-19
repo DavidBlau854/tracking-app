@@ -1,6 +1,6 @@
 import React from "react";
 import SideBar from "./SideBar";
-import "./styles/sideAndPage.css";
+import "./sideAndPage.css";
 import SubjectPage from "./SubjectsPage";
 
 function SideAndPage() {
