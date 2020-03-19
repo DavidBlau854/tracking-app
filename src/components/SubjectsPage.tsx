@@ -4,10 +4,10 @@ import "./subjectsPage.css";
 import exampleSubjects from "../ExampleSubjects";
 
 class SubjectsPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { subjects: [] };
-  }
+  // constructor() {
+  //   super({});
+  //   this.state = { subjects: [] };
+  // }
 
   componentDidMount() {
     this.setState({ subjects: exampleSubjects }); //server here..
@@ -16,9 +16,10 @@ class SubjectsPage extends React.Component {
   render() {
     return (
       <div className="subjectsPage">
-        {this.state.subjects.map(subj => (
+        {/* {this.state.subjects.map(subj => (
           <Subject key={subj.id} title={subj.title}></Subject>
-        ))}
+        ))} */}
+        hi
       </div>
     );
   }

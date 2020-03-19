@@ -1,7 +1,7 @@
 import React from "react";
 import "./subject.css";
 
-function Subject(props) {
+function Subject(props: any) {
   return (
     <div className="subject">
       <p>{props.title}</p>
