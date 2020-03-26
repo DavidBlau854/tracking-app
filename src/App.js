@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SideNavBar from "./components/SideNavBar";
 import SubjectPage from "./components/SubjectsPage";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -18,7 +19,5 @@ function App() {
     </Router>
   );
 }
-
-const Profile = () => <h1>profile!!!</h1>;
 
 export default App;

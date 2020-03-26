@@ -4,6 +4,7 @@
   height: 100%;
   background-color: darkslategrey;
   color: white;
+  width: 10em;
 }
 .nav-links {
   list-style: none;
@@ -13,10 +14,10 @@ li {
   color: white;
 }
 img {
-  margin-left: 1em;
+  margin-left: 0.5em;
   margin-top: 1em;
-  height: 6rem;
-  width: 6rem;
+  height: 6em;
+  width: 6em;
 }
 a:link {
   text-decoration: none;

@@ -1,0 +1,16 @@
+img.prof-pic {
+  height: 50%;
+  width: 50%;
+  animation: heartbeat infinite 1s;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
