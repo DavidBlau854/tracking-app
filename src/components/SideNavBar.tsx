@@ -19,7 +19,6 @@ function SideNavBar() {
           <li>Archive</li>
         </ul>
       </nav>
-      <div className="add-subject">Add Tracking Subject</div>
     </div>
   );
 }

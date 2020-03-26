@@ -1,12 +1,5 @@
 .App {
   display: flex;
   flex-direction: row;
-}
-
-SideNavBar {
-  width: 10%;
-}
-
-SubjectPage {
-  width: 90%ks;
+  height: 40em;
 }
