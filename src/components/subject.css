@@ -10,7 +10,7 @@
 }
 
 .subject:hover {
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 .plus-image {
@@ -24,7 +24,7 @@
 
 .plus-image.pressed {
   animation-name: heartbeat;
-  animation-duration: 0.5s;
+  animation-duration: 0.75s;
 }
 
 @keyframes heartbeat {
@@ -36,22 +36,5 @@
   }
   100% {
     transform: scale(1);
-  }
-}
-@keyframes increasingRotate {
-  0% {
-    transform: rotate(0);
-  }
-  30% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  70% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }

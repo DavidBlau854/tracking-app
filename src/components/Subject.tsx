@@ -25,8 +25,8 @@ class Subject extends React.Component {
 
   onAddClick() {
     this.setState({ isAddClicked: true });
+    setTimeout(() => this.setState({ isAddClicked: false }), 750);
     this.props.writeEvent();
-    setTimeout(() => this.setState({ isAddClicked: false }), 500);
   }
   onMouseCrossBoundary() {
     this.setState({ isHovered: !this.state.isHovered });
