@@ -5,6 +5,7 @@ import plusImage from "../assets/img/plusSign.png";
 
 type IState = {
   isHovered: boolean;
+  isAddClicked: boolean;
 };
 type IProps = {
   subject: ISubject;
@@ -18,10 +19,15 @@ class Subject extends React.Component {
   constructor(props: IProps) {
     super(props);
     this.props = props;
-    this.state = { isHovered: false };
+    this.state = { isHovered: false, isAddClicked: false };
     this.onMouseCrossBoundary = this.onMouseCrossBoundary.bind(this);
   }
 
+  onAddClick() {
+    this.setState({ isAddClicked: true });
+    this.props.writeEvent();
+    setTimeout(() => this.setState({ isAddClicked: false }), 500);
+  }
   onMouseCrossBoundary() {
     this.setState({ isHovered: !this.state.isHovered });
   }
@@ -35,21 +41,13 @@ class Subject extends React.Component {
         onMouseLeave={this.onMouseCrossBoundary}
       >
         <p>{this.props.subject.title}</p>
-        {!this.state.isHovered && (
-          <div>
-            <p>{detailsString}</p>
-          </div>
-        )}
-        {this.state.isHovered && (
-          <div>
-            <img
-              className="plus-image"
-              src={plusImage}
-              alt="add"
-              onClick={() => this.props.writeEvent()}
-            ></img>
-          </div>
-        )}
+        <p>{detailsString}</p>
+        <img
+          className={`plus-image ${this.state.isAddClicked ? "pressed" : null}`}
+          src={plusImage}
+          alt="add"
+          onClick={() => this.onAddClick()}
+        ></img>
       </div>
     );
   }

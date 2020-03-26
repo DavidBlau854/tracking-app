@@ -1,4 +1,5 @@
 .subject {
+  position: relative;
   flex-basis: 40%;
   height: 100px;
   border: solid 1px black;
@@ -13,6 +14,44 @@
 }
 
 .plus-image {
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 61px;
   height: 35px;
   width: 35px;
+}
+
+.plus-image.pressed {
+  animation-name: heartbeat;
+  animation-duration: 0.5s;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.1);
+  }
+  60% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes increasingRotate {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
