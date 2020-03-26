@@ -11,3 +11,8 @@
 .subject:hover {
   opacity: 0.95;
 }
+
+.plus-image {
+  height: 35px;
+  width: 35px;
+}

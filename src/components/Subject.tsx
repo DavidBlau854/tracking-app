@@ -1,6 +1,7 @@
 import React from "react";
 import "./subject.css";
 import { ISubject } from "../models/Subject";
+import plusImage from "../assets/img/plusSign.png";
 
 type IState = {
   isHovered: boolean;
@@ -41,8 +42,12 @@ class Subject extends React.Component {
         )}
         {this.state.isHovered && (
           <div>
-            <button onClick={() => this.props.writeEvent()}>+</button>
-            <input type={this.props.subject.unitInputType} />
+            <img
+              className="plus-image"
+              src={plusImage}
+              alt="add"
+              onClick={() => this.props.writeEvent()}
+            ></img>
           </div>
         )}
       </div>
