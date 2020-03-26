@@ -11,11 +11,14 @@ function App() {
         <SideNavBar />
         <Switch>
           <Route path="/" component={SubjectPage} exact />
-          <Route path="/SubjectPage" component={SubjectPage} />
+          <Route path="/subjectPage" component={SubjectPage} />
+          <Route path="/profile" component={Profile} />
         </Switch>
       </div>
     </Router>
   );
 }
+
+const Profile = () => <h1>profile!!!</h1>;
 
 export default App;

@@ -1,5 +1,6 @@
-nav {
+.side-nav-bar {
   display: flex;
+  flex-direction: column;
   height: 100%;
   background-color: darkslategrey;
   color: white;
@@ -9,4 +10,15 @@ nav {
 }
 li {
   padding-top: 0.3em;
+  color: white;
+  text-decoration: none;
+}
+img {
+  margin-left: 1em;
+  margin-top: 1em;
+  height: 6rem;
+  width: 6rem;
+}
+a:link {
+  text-decoration: none;
 }
