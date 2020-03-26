@@ -1,12 +1,12 @@
 import React from "react";
-import SideBar from "./SideBar";
+import SideNavBar from "./SideNavBar";
 import "./sideAndPage.css";
 import SubjectPage from "./SubjectsPage";
 
 function SideAndPage() {
   return (
     <div className="sideAndPage">
-      <SideBar />
+      <SideNavBar />
       <SubjectPage />
     </div>
   );
