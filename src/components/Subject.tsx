@@ -21,6 +21,7 @@ class Subject extends React.Component {
     this.props = props;
     this.state = { isHovered: false, isAddClicked: false };
     this.onMouseCrossBoundary = this.onMouseCrossBoundary.bind(this);
+    this.onAddClick = this.onAddClick.bind(this);
   }
 
   onAddClick() {
@@ -46,7 +47,7 @@ class Subject extends React.Component {
           className={`plus-image ${this.state.isAddClicked ? "pressed" : null}`}
           src={plusImage}
           alt="add"
-          onClick={() => this.onAddClick()}
+          onClick={this.onAddClick}
         ></img>
       </div>
     );
